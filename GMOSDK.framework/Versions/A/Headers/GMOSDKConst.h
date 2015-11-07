@@ -43,15 +43,9 @@ typedef void (^GMOSDKObjectHandler) (id object, NSError *error);
 //
 #define GMO_LANGUAGE_KEY @"kGmoLangKey"
 #define GMOGame_SDK_VERSION @"4.0"
-#define GMOGame_SDK_LABEL_VERSION @"4.0.9b5"
+#define GMOGame_SDK_LABEL_VERSION @"4.0.9b6.6"
 #define GMOGame_SDK_BUILD 40
-#define GMO_GAME_DEVICE_TOKEN_KEY @"gmo_game_push_device_token"
-#define GMO_LOGIN_DICT_KEY_SAVED @"key_gmo_login_dict_saved"
-#define GMO_API_CONFIG_KEY @"gmo_api_config_key"
-#define GMO_USER_DEVICE_KEY @"gamota_samedevice_user"
-
-#define GMO_CLOSE_PUSH_KEY @"gmo_post_close_notification"
-#define GMO_NORMAL_LOGIN_USERNAME_KEY @"gmo_normal_login_username_key"
+#define GMO_LOGIN_DICT_KEY_SAVED [@"a2V5X2FwcG90YV9sb2dpbl9kaWN0X3NhdmVk" base64DecodedString]
 
 //Debug mode
 //#define DEBUG_MODE YES
