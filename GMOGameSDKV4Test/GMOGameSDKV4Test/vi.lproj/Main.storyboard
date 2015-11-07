@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Hgl-fc-wdz">
+    <dependencies>
+        <deployment version="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="lEa-V1-ZfM">
+            <objects>
+                <viewController id="Hgl-fc-wdz" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bPf-C0-4ty"/>
+                        <viewControllerLayoutGuide type="bottom" id="vvY-DX-DbI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6aG-4y-eRl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaB-ha-3NK">
+                                <rect key="frame" x="61" y="81" width="198" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="lYd-2t-uTL"/>
+                                    <constraint firstAttribute="width" constant="198" id="y0m-ei-Na7"/>
+                                </constraints>
+                                <state key="normal" title="Logout">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutAction:" destination="Hgl-fc-wdz" eventType="touchUpInside" id="L0K-kj-nI6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEJ-wy-5Sp">
+                                <rect key="frame" x="30" y="166" width="259" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YSl-c8-99V"/>
+                                    <constraint firstAttribute="width" constant="259" id="gHW-0E-GhS"/>
+                                </constraints>
+                                <state key="normal" title="show paymentView with PackageID">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showPaymentWithPackage:" destination="Hgl-fc-wdz" eventType="touchUpInside" id="gug-t0-RUi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhT-WE-Gnh">
+                                <rect key="frame" x="61" y="215" width="198" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8aI-3v-oU4"/>
+                                    <constraint firstAttribute="width" constant="198" id="fyr-nf-ApJ"/>
+                                </constraints>
+                                <state key="normal" title="show ProfileView">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showProfileView:" destination="Hgl-fc-wdz" eventType="touchUpInside" id="Mca-Bz-nKN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N3P-On-7fc">
+                                <rect key="frame" x="61" y="269" width="198" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="198" id="1iF-cS-I0q"/>
+                                    <constraint firstAttribute="height" constant="30" id="nDr-aW-WI9"/>
+                                </constraints>
+                                <state key="normal" title="showTransactionHistory">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showTransactionHistory:" destination="Hgl-fc-wdz" eventType="touchUpInside" id="oT7-ix-DyV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXn-h7-jgY">
+                                <rect key="frame" x="71" y="325" width="179" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3ph-BC-0sj"/>
+                                    <constraint firstAttribute="width" constant="179" id="Hnc-Vz-b9P"/>
+                                </constraints>
+                                <state key="normal" title="show RegisterView">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showRegister:" destination="Hgl-fc-wdz" eventType="touchUpInside" id="xA2-dn-sEU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quA-IY-AMA">
+                                <rect key="frame" x="61" y="119" width="198" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="842-16-1Wb"/>
+                                    <constraint firstAttribute="width" constant="198" id="p7M-UM-G2G"/>
+                                </constraints>
+                                <state key="normal" title="show PaymentView">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showPaymentView:" destination="Hgl-fc-wdz" eventType="touchUpInside" id="Y2M-sf-0Sk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qEJ-wy-5Sp" firstAttribute="top" secondItem="quA-IY-AMA" secondAttribute="bottom" constant="17" id="0cw-Nk-BwQ"/>
+                            <constraint firstItem="N3P-On-7fc" firstAttribute="top" secondItem="fhT-WE-Gnh" secondAttribute="bottom" constant="24" id="1zT-f2-GhJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WaB-ha-3NK" secondAttribute="trailing" constant="45" id="5hJ-AP-mzx"/>
+                            <constraint firstItem="qEJ-wy-5Sp" firstAttribute="leading" secondItem="6aG-4y-eRl" secondAttribute="leadingMargin" constant="14" id="6cy-hK-Lpp"/>
+                            <constraint firstItem="xXn-h7-jgY" firstAttribute="leading" secondItem="6aG-4y-eRl" secondAttribute="leadingMargin" constant="55" id="7BM-DB-PEV"/>
+                            <constraint firstItem="fhT-WE-Gnh" firstAttribute="top" secondItem="qEJ-wy-5Sp" secondAttribute="bottom" constant="19" id="86e-qO-TZ0"/>
+                            <constraint firstItem="fhT-WE-Gnh" firstAttribute="trailing" secondItem="N3P-On-7fc" secondAttribute="trailing" id="8Ov-5o-dEu"/>
+                            <constraint firstItem="xXn-h7-jgY" firstAttribute="centerX" secondItem="N3P-On-7fc" secondAttribute="centerX" id="AWd-Tx-M8c"/>
+                            <constraint firstItem="fhT-WE-Gnh" firstAttribute="top" secondItem="qEJ-wy-5Sp" secondAttribute="bottom" constant="19" id="BN5-O9-kWc"/>
+                            <constraint firstItem="qEJ-wy-5Sp" firstAttribute="top" secondItem="quA-IY-AMA" secondAttribute="bottom" constant="17" id="Cbj-Ra-FXj"/>
+                            <constraint firstItem="fhT-WE-Gnh" firstAttribute="leading" secondItem="N3P-On-7fc" secondAttribute="leading" id="EXn-1p-4gx"/>
+                            <constraint firstItem="WaB-ha-3NK" firstAttribute="top" secondItem="bPf-C0-4ty" secondAttribute="bottom" constant="61" id="F4G-W3-hDh"/>
+                            <constraint firstItem="WaB-ha-3NK" firstAttribute="top" secondItem="bPf-C0-4ty" secondAttribute="bottom" constant="61" id="RMh-tM-6cc"/>
+                            <constraint firstItem="qEJ-wy-5Sp" firstAttribute="centerX" secondItem="6aG-4y-eRl" secondAttribute="centerX" id="Rr6-31-Z4X"/>
+                            <constraint firstItem="xXn-h7-jgY" firstAttribute="top" secondItem="N3P-On-7fc" secondAttribute="bottom" constant="26" id="Xqn-Ri-65W"/>
+                            <constraint firstItem="quA-IY-AMA" firstAttribute="top" secondItem="WaB-ha-3NK" secondAttribute="bottom" constant="8" id="YiK-pP-zhH"/>
+                            <constraint firstItem="xXn-h7-jgY" firstAttribute="top" secondItem="N3P-On-7fc" secondAttribute="bottom" constant="26" id="Ys7-zM-cmq"/>
+                            <constraint firstItem="quA-IY-AMA" firstAttribute="leading" secondItem="WaB-ha-3NK" secondAttribute="leading" id="d15-zi-w6L"/>
+                            <constraint firstItem="WaB-ha-3NK" firstAttribute="leading" secondItem="6aG-4y-eRl" secondAttribute="leadingMargin" constant="45" id="fY6-Mw-QCS"/>
+                            <constraint firstItem="quA-IY-AMA" firstAttribute="trailing" secondItem="WaB-ha-3NK" secondAttribute="trailing" id="i3p-HU-XPT"/>
+                            <constraint firstItem="qEJ-wy-5Sp" firstAttribute="top" secondItem="WaB-ha-3NK" secondAttribute="bottom" constant="55" id="iiB-gS-m4Q"/>
+                            <constraint firstItem="N3P-On-7fc" firstAttribute="centerY" secondItem="6aG-4y-eRl" secondAttribute="centerY" id="pKn-In-LY1"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="loginButton" destination="WaB-ha-3NK" id="asB-SF-q9U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sng-Bt-O1e" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="204"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Hgl-fc-wdz">
+    <dependencies>
+        <deployment version="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="lEa-V1-ZfM">
+            <objects>
+                <viewController id="Hgl-fc-wdz" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bPf-C0-4ty"/>
+                        <viewControllerLayoutGuide type="bottom" id="vvY-DX-DbI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6aG-4y-eRl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaB-ha-3NK">
+                                <rect key="frame" x="61" y="81" width="198" height="30"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutAction:" destination="Hgl-fc-wdz" eventType="touchUpInside" id="L0K-kj-nI6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quA-IY-AMA">
+                                <rect key="frame" x="61" y="119" width="198" height="30"/>
+                                <state key="normal" title="show PaymentView">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showPaymentView:" destination="Hgl-fc-wdz" eventType="touchUpInside" id="Y2M-sf-0Sk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEJ-wy-5Sp">
+                                <rect key="frame" x="30" y="166" width="259" height="30"/>
+                                <state key="normal" title="show paymentView 500 coin">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showPaymentWithPackage:" destination="Hgl-fc-wdz" eventType="touchUpInside" id="gug-t0-RUi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N3P-On-7fc">
+                                <rect key="frame" x="61" y="269" width="198" height="30"/>
+                                <state key="normal" title="showTransactionHistory">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showTransactionHistory:" destination="Hgl-fc-wdz" eventType="touchUpInside" id="oT7-ix-DyV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXn-h7-jgY">
+                                <rect key="frame" x="71" y="325" width="179" height="30"/>
+                                <state key="normal" title="show RegisterView">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showRegister:" destination="Hgl-fc-wdz" eventType="touchUpInside" id="xA2-dn-sEU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhT-WE-Gnh">
+                                <rect key="frame" x="61" y="215" width="198" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="198" id="PBV-O2-2dc"/>
+                                    <constraint firstAttribute="height" constant="30" id="mva-XX-SIP"/>
+                                </constraints>
+                                <state key="normal" title="show ProfileView">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showProfileView:" destination="Hgl-fc-wdz" eventType="touchUpInside" id="Mca-Bz-nKN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WaB-ha-3NK" firstAttribute="leading" secondItem="quA-IY-AMA" secondAttribute="leading" id="17b-Gs-peC"/>
+                            <constraint firstItem="fhT-WE-Gnh" firstAttribute="leading" secondItem="quA-IY-AMA" secondAttribute="leading" id="1Un-Sh-9gT"/>
+                            <constraint firstItem="quA-IY-AMA" firstAttribute="top" secondItem="WaB-ha-3NK" secondAttribute="bottom" constant="8" symbolic="YES" id="1tB-n4-jQB"/>
+                            <constraint firstItem="xXn-h7-jgY" firstAttribute="leading" secondItem="6aG-4y-eRl" secondAttribute="leadingMargin" constant="55" id="28s-cn-a9X"/>
+                            <constraint firstItem="N3P-On-7fc" firstAttribute="centerY" secondItem="6aG-4y-eRl" secondAttribute="centerY" id="7WM-0k-G0W"/>
+                            <constraint firstItem="qEJ-wy-5Sp" firstAttribute="leading" secondItem="6aG-4y-eRl" secondAttribute="leadingMargin" constant="14" id="EOO-3o-VbS"/>
+                            <constraint firstItem="WaB-ha-3NK" firstAttribute="trailing" secondItem="quA-IY-AMA" secondAttribute="trailing" id="FVP-F4-GfR"/>
+                            <constraint firstItem="quA-IY-AMA" firstAttribute="trailing" secondItem="fhT-WE-Gnh" secondAttribute="trailing" id="Ias-At-QUk"/>
+                            <constraint firstItem="N3P-On-7fc" firstAttribute="trailing" secondItem="fhT-WE-Gnh" secondAttribute="trailing" id="It5-fo-jpQ"/>
+                            <constraint firstItem="WaB-ha-3NK" firstAttribute="leading" secondItem="6aG-4y-eRl" secondAttribute="leadingMargin" constant="45" id="JHG-6a-Lv3"/>
+                            <constraint firstItem="N3P-On-7fc" firstAttribute="top" secondItem="fhT-WE-Gnh" secondAttribute="bottom" constant="24" id="QPR-gq-64F"/>
+                            <constraint firstItem="N3P-On-7fc" firstAttribute="centerX" secondItem="xXn-h7-jgY" secondAttribute="centerX" id="TSc-1w-Tx6"/>
+                            <constraint firstItem="N3P-On-7fc" firstAttribute="centerX" secondItem="6aG-4y-eRl" secondAttribute="centerX" id="YyZ-98-7if"/>
+                            <constraint firstItem="qEJ-wy-5Sp" firstAttribute="top" secondItem="quA-IY-AMA" secondAttribute="bottom" constant="17" id="cC8-9Q-Spw"/>
+                            <constraint firstItem="fhT-WE-Gnh" firstAttribute="top" secondItem="qEJ-wy-5Sp" secondAttribute="bottom" constant="19" id="mLg-q3-tDx"/>
+                            <constraint firstItem="xXn-h7-jgY" firstAttribute="top" secondItem="N3P-On-7fc" secondAttribute="bottom" constant="26" id="rEy-cR-n7X"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qEJ-wy-5Sp" secondAttribute="trailing" constant="15" id="spy-Pv-B23"/>
+                            <constraint firstItem="fhT-WE-Gnh" firstAttribute="top" secondItem="qEJ-wy-5Sp" secondAttribute="bottom" constant="19" id="ubW-gc-xJz"/>
+                            <constraint firstItem="N3P-On-7fc" firstAttribute="leading" secondItem="fhT-WE-Gnh" secondAttribute="leading" id="wMI-Q2-pqe"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="loginButton" destination="WaB-ha-3NK" id="asB-SF-q9U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sng-Bt-O1e" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="204"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
