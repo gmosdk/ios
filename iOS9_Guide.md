@@ -38,6 +38,6 @@ Add `LSApplicationQueriesSchemes` to `Info.plist`
 
 ```
 
-The plist changes should look like after change 
+The plist changes should look like this
 
 ![](images/ios9_changes.png)
