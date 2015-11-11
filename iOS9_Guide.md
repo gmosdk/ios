@@ -24,7 +24,7 @@ The iOS 9 SDK offers [App Thinning](https://developer.apple.com/library/prerelea
 In the the past we did not include bitcode and you had to disable it in your app in your build settings or with the `ENABLE_BITCODE=NO` compiler flag. As of v4.6.0 we now include bitcode so you can either explicitly enable it to use it or leave it disabled.
 
 ## Whitelist URL schemes
-Accept `url schemes` to support `canOpenURL` function for `FacebookSDK` login
+Add `LSApplicationQueriesSchemes` to `Info.plist`
 
 ```
 <key>LSApplicationQueriesSchemes</key>
@@ -32,7 +32,8 @@ Accept `url schemes` to support `canOpenURL` function for `FacebookSDK` login
   <string>fbapi</string>
   <string>fb-messenger-api</string>
   <string>fbauth2</string>
-  <string>fbshareextension</string>    
+  <string>fbshareextension</string>
+  <string>tel</string>      
 </array>
 
 ```
