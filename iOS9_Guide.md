@@ -37,3 +37,7 @@ Add `LSApplicationQueriesSchemes` to `Info.plist`
 </array>
 
 ```
+
+The plist changes should look like after change 
+
+![](images/ios9_changes.png)
