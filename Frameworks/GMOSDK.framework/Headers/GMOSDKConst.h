@@ -37,13 +37,13 @@ typedef void (^GMOSDKObjectHandler) (id object, NSError *error);
 #define GMOSDK_API_VERSION @"1.0"
 #define GMO_DIALOG_PAYMENT_TAG 1430
 
-#define GMOGameSDK_SCHEMA @"Gmo"
+#define GMOGameSDK_SCHEMA @"gmo"
 #define GMOGameSDK_DRAGVIEW_TAG 1428
 
 //
 #define GMO_LANGUAGE_KEY [@"a0FwcG90YUxhbmdLZXk=" base64DecodedString]
 #define GMOGame_SDK_VERSION @"4.0"
-#define GMOGame_SDK_LABEL_VERSION @"4.0.9b6.7"
+#define GMOGame_SDK_LABEL_VERSION @"4.0.9b6.8"
 #define GMOGame_SDK_BUILD 40
 #define GMO_LOGIN_DICT_KEY_SAVED [@"a2V5X2FwcG90YV9sb2dpbl9kaWN0X3NhdmVk" base64DecodedString]
 
